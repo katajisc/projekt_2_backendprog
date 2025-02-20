@@ -13,9 +13,8 @@ function test_input($data) {
 
 // Databaskonfiguration
 $servername = "localhost";
-$dbname = "bistromd";
-$username = "bistromd";
+$dbname = "katajisc";
+$username = "katajisc";
 include "hemlis.php";
-
 
 ?>
