@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dennis Dejtar</title>
+    <title>Day2Date</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -15,7 +15,7 @@
         <section>
 
             <article>
-                <h2>Välkommen till dennis dejtar!</h2>
+                <h2>Välkommen till PROJEKT 2!</h2>
                 <?php include "view_profiles.php" ?>
             </article>
 
@@ -23,7 +23,7 @@
 
         <!-- Footern innehåller t.ex. somelänkar och kontaktuppg -->
         <footer>
-            Dennis Dejtar 2025
+            Day2Date 2025 <br>
             Template by Dennis<sup>&#169;</sup>
         </footer>
 
