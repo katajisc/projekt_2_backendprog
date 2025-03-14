@@ -21,12 +21,7 @@
 
         </section>
 
-        <!-- Footern innehåller t.ex. somelänkar och kontaktuppg -->
-        <footer>
-            Day2Date 2025 <br>
-            Template by Dennis<sup>&#169;</sup>
-        </footer>
-
+        <?php include "footer.php" ?>
     </div>
 </body>
 

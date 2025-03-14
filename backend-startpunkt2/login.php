@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dennis Dejtar</title>
+    <title>Day2Date</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -15,16 +15,13 @@
         <section>
 
             <article>
-                <h2>Var så god logga in</h2>
+                <h2>Logga in</h2>
                 <?php include "./view_register.php" ?>
             </article>
 
         </section>
 
-        <!-- Footern innehåller t.ex. somelänkar och kontaktuppg -->
-        <footer>
-            Made by Dennis<sup>&#169;</sup>
-        </footer>
+        <?php include "footer.php" ?>
 
     </div>
 </body>
