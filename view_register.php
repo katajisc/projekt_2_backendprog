@@ -1,8 +1,8 @@
 <h2>Skapa en ny användare</h2>
 <p>Här kan du registrera dig</p>
 
-<!-- ÄNDRA GET till POST -->
-<form action="login.php" method="GET">
+
+<form action="login.php" method="POST">
     Användarnamn: <input type="text" name="username" placeholder="Max 30 tecken"><br>
     Namn: <input type="text" name="realname" placeholder="Förnamn Efternamn"><br>
     Epost: <input type="text" name="email"><br>
@@ -17,12 +17,12 @@
       <input type="radio" name="preference" value="4">Vill inte säga<br>
     </div>
     Om mig: <br>
-    <textarea name="bio" rows="5" columns="50" maxlength="255" placeholder="Här kan du berätta om dig själv i 255 tecken">
-    </textarea> <br>
+    <textarea name="bio" rows="4" maxlength="255" placeholder="Här kan du berätta om dig själv i 255 tecken"></textarea> <br>
 
+    <input type="hidden" namn="state" value="register"> <br>
     <input type="submit" value="Registrera dig">
 </form>
 
-Har du redan ett konto? <a href="login.php"> Logga in </a>.
+<p>Har du redan ett konto? <a href="./login.php"> Logga in här</a>.</p>
 
 <?php include "model_register.php" ?>

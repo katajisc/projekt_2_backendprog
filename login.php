@@ -15,8 +15,15 @@
         <section>
 
             <article>
-                <h2>Logga in</h2>
-                <?php include "./view_register.php" ?>
+
+                <?php 
+
+                if(!empty($_REQUEST['state'])) {
+                    include "./view_register.php";
+                }
+                else {
+                    include "./view_login.php";
+                } ?>
             </article>
 
         </section>

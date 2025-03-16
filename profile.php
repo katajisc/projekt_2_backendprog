@@ -17,6 +17,10 @@
                 <h2>Profilsidan</h2>
                 <?php include "view_account.php" ?>
             </article>
+            <article>
+                <h3>Kommentarer</h3>
+                <?php include "view_comments.php" ?>
+            </article>
 
         </section>
 

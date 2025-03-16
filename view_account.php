@@ -5,6 +5,6 @@
 
 <form action="profile.php" method="GET">
     Full name: <input type="text" name="fullname" value="<?= $row['realname'] ?>"> <br>
-    Bio: <input type="text" name="bio" value="<?= $row['bio'] ?>"> <br>
+    Bio: <input type="text" name="bio" value="<?= $row['bio'] ?>" style="width:300px;"> <br>
     <input type="submit" value="Updatera">
 </form>

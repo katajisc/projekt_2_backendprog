@@ -6,8 +6,8 @@
     <nav>
         <!-- Huvudmenyn -->
         <ul>
-            <li><a href="./#/">Home</a></li>
-            <li><a href="./rapport/">Rapport</a></li>
+            <li><a href="./index.php">Home</a></li>
+            <li><a href="./rapport.php">Rapport</a></li>
             <?php
             // Hälsa på återkommande användare
             if (isset($_SESSION['username'])) {
