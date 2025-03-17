@@ -15,9 +15,7 @@
         <section>
 
             <article>
-
                 <?php 
-
                 if(!empty($_REQUEST['state'])) {
                     include "./view_register.php";
                 }

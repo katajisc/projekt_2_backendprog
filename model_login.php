@@ -7,14 +7,15 @@ if (!empty($_REQUEST['username']) && !empty($_REQUEST['password'])) {
     $password = test_input($_REQUEST['password']);
     $passhash = password_hash($password, PASSWORD_DEFAULT);
 
-    $sql = "SELECT id, username, passhash FROM profiles WHERE username = ?";
+    $sql = "SELECT id, username, passhash, `role` FROM profiles WHERE username = ?";
     $stmt = $conn->prepare($sql); 
     if ($stmt->execute([$username])) { 
         # IMPL. PASSHASH-CHECK
         print("Inloggning lyckades! Förflyttas till profilsidan...");
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         $_SESSION['username'] = $username;
-        $_SESSION['sender_id'] = $row['id'];
+        $_SESSION['user_id'] = $row['id'];
+        $_SESSION['role'] = $row['role'];
         header("Refresh:2; url=profile.php");
     } else {
         print("Inloggning misslyckades :(");

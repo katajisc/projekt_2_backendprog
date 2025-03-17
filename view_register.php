@@ -2,7 +2,7 @@
 <p>Här kan du registrera dig</p>
 
 
-<form action="login.php" method="POST">
+<form action="login.php" method="GET">
     Användarnamn: <input type="text" name="username" placeholder="Max 30 tecken"><br>
     Namn: <input type="text" name="realname" placeholder="Förnamn Efternamn"><br>
     Epost: <input type="text" name="email"><br>

@@ -15,8 +15,13 @@
         <section>
 
             <article>
-                <h2>Välkommen till PROJEKT 2!</h2>
-                <?php include "view_profiles.php" ?>
+                <h2>Välkommen till Day2Date - Dags att dejta!</h2>
+                <?php if(!empty($_REQUEST['profile'])) {
+                    include "./view_ad.php";    # se spec. profil
+                }
+                else {
+                    include "./view_profiles.php";  # se alla profiler
+                } ?>
             </article>
 
         </section>
