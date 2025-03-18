@@ -8,10 +8,10 @@
             <li><a href="./index.php">Home</a></li>
             <?php if (isset($_SESSION['username'])) {
                 print("<li><a href='./profile.php'>". $_SESSION['username']."s profil</a></li>");
-                # print("Välkommen tillbaka ". $_SESSION['username']);
             }
             else {
                 print("<li><a href='./login.php'> Login </a></li>");
+                print("<li><a href='./register.php'> Register </a></li>");
             } ?>
             <li><a href="./rapport.php">Rapport</a></li>
         </ul>

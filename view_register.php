@@ -2,7 +2,7 @@
 <p>Här kan du registrera dig</p>
 
 
-<form action="login.php" method="GET">
+<form action="register.php" method="POST">
     Användarnamn: <input type="text" name="username" placeholder="Max 30 tecken"><br>
     Namn: <input type="text" name="realname" placeholder="Förnamn Efternamn"><br>
     Epost: <input type="text" name="email"><br>
@@ -19,10 +19,9 @@
     Om mig: <br>
     <textarea name="bio" rows="4" maxlength="255" placeholder="Här kan du berätta om dig själv i 255 tecken"></textarea> <br>
 
-    <input type="hidden" namn="state" value="register"> <br>
     <input type="submit" value="Registrera dig">
 </form>
 
-<p>Har du redan ett konto? <a href="./login.php"> Logga in här</a>.</p>
+<!-- <p>Har du redan ett konto? <a href="./login.php"> Logga in här</a>.</p> -->
 
 <?php include "model_register.php" ?>

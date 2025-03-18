@@ -13,22 +13,15 @@
     <div id="container">
         <?php include "header.php" ?>
         <section>
+
             <article>
-                <h2>Profilsidan</h2>
-                <?php include "view_account.php" ?>
-            </article>
-            <article>
-                <h3>Kommentarer</h3>
-                <?php include "view_comments.php" ?>
+                <?php include "./view_register.php" ?>
             </article>
 
-            <!-- ???? -->
-            <button>
-                <a href="logout.php">Logga ut</a>
-            </button>
         </section>
 
         <?php include "footer.php" ?>
+
     </div>
 </body>
 

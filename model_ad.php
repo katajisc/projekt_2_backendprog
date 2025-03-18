@@ -5,6 +5,6 @@
     $stmt->execute([$username]);
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    if (!empty(test_input($_REQUEST['w_comment']))) {
+    if (!empty(test_input($_REQUEST['ad_kommentar']))) {
         print("2DO: Send comment to database");
     }

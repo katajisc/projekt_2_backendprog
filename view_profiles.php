@@ -3,14 +3,19 @@
 <?php include "model_profiles.php" ?>
 
 <?php
-    foreach($stmt as $row) { ?>
-        <h3> <?= $row['realname']; ?>s profil</h3>
-        <p> <?= $row['bio']; ?> </p> <br>
+    foreach($stmt as $result) { ?>
+
+   
+        <a href="./index.php?profile=<?= $result['username'] ?>"> 
+            <h3><?= $result['username']; ?></h3>
+        </a>
+
+        <p> <?= $result['bio']; ?> </p>
             
         <!-- Admin-funktionalitet - tips --> 
         <?php   
             if(!empty($_SESSION['role']) && $_SESSION['role'] == 3) {
-                print("<span> <a href='edit.php?profile=".$row['id']."'> Edit </a></span>");
+                print("<span> <a href='edit.php?profile=".$result['id']."'> Edit </a></span>");
             } ?>
 
         <!-- 2do: flytta kommentarsfunk. till egen vy & modell -->
@@ -26,7 +31,7 @@
                 <input type="button" name="like" class="likedislike like" value="Gilla">
                 <input type="button" name="dislike" class="likedislike dislike" value="Ogilla">
         <!-- Klura ut hur raden nedan bidrar till att skicka likes/dislikes till rätt användare
-                <input type="hidden" name="user_id" value="<?#= $row['id'] ?>">
+                <input type="hidden" name="user_id" value="<?#= $result['id'] ?>">
                 -->
             </form>      
         <?php

@@ -24,7 +24,8 @@ if (!empty($_REQUEST['username']) && !empty($_REQUEST['email'])) {
     $stmt = $conn->prepare($sql); 
     if ($stmt->execute([$username, $realname, $passhash, $zipcode, $bio, $salary, $preference, $email, $likes, $role])) {
         print("Registeringen lyckades!");
-        header("Refresh:2; url=login.php");
+        header("Refresh:2; url=profile.php");
+
     } else {
         print("Registrering misslyckades. Något gick fel med exekvering av sql.");
     }

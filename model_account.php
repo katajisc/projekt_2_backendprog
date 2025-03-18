@@ -6,9 +6,12 @@
     $sql = "SELECT * FROM profiles WHERE username = ?"; # sql-kommandot
     $stmt = $conn->prepare($sql);   # sql konverteras till c
     $stmt->execute([$username]);    # kör
-    $row = $stmt->fetch(PDO::FETCH_ASSOC);  # data hämtas som assoc arr
-    $user_id = $row['id'];  # hämtar anv.id, möjliggör uppdatering
-    print("Current user id: " . $user_id);
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);  # data hämtas som assoc arr.
+    $user_id = $result['id'];  # hämtar anv.id. för uppdatering
+    
+    if ($result['role'] == 3) {
+        print("Hello, admin.");
+    }
 
     # uppdatera data i db:n
     if(!empty($_REQUEST['fullname']) && !empty($_REQUEST['bio'])) {
