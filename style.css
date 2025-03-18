@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 
 /* Sidhuvud */
 header {
@@ -39,13 +42,25 @@ nav a:hover {
 }
 
 
-/* Allmängällande stilar */
+/* Gen */
 body {
     background-color: #3D3D3D;
     margin: 0;
     font-family: "Helvetice Neue", Helvetica, sans-serif;
     line-height: 1.5;
 }
+
+article {
+    padding: 5px 10px;
+    margin:0;
+}
+
+.card {
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    margin: 20px;
+}
+
 #container {
     background-color: #fff;
     color: #3D3D3D;
@@ -58,19 +73,51 @@ article {
     padding-left: 10px;
 }
 
-/* Footer */
 footer {
     background-color: #6e4da6;
     color: #fff;
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
+    max-width: 800px;
     width: 100%;
-    max-width: 790px;
     padding: 15px 5px;
     text-align: center;
 }
 
-/* Responsiv styling */
+a {
+    color: midnightblue;
+    text-decoration: none;
+}
+a:hover {
+    color: blueviolet;
+}
+
+.btn, button {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    color: black;
+    margin: 0 5px;
+    padding: 5px 10px;
+}
+#like:hover {
+    background-color: #e8ddff;
+}
+#dislike:hover {
+    background-color: #dadfff;
+}
+
+input {
+    margin: 3px 2px;
+}
+
+/* Spec */
+#greet {
+    text-align: center;
+}
+
+
+/* responsive */
 @media (max-width: 640px) {
     header {
         display: block;
@@ -81,19 +128,4 @@ footer {
         float: none;
     }
     
-}
-
-.likedislike {
-    background-color: white;
-    border: 1px solid lightgray;
-    border-radius: 12px;
-    color: black;
-    margin: 0 5px;
-    padding: 5px 10px;
-}
-.like:hover {
-    background-color: #e8ddff;
-}
-.dislike:hover {
-    background-color: #dadfff;
 }

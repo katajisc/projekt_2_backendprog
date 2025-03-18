@@ -5,7 +5,7 @@
 
     <nav>
         <ul>
-            <li><a href="./index.php">Home</a></li>
+            <li><a href="./index.php">Hem</a></li>
             <?php if (isset($_SESSION['username'])) {
                 print("<li><a href='./profile.php'>". $_SESSION['username']."s profil</a></li>");
             }

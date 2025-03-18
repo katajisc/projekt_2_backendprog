@@ -19,7 +19,7 @@
     Om mig: <br>
     <textarea name="bio" rows="4" maxlength="255" placeholder="Här kan du berätta om dig själv i 255 tecken"></textarea> <br>
 
-    <input type="submit" value="Registrera dig">
+    <input type="submit" value="Registrera dig" class="btn">
 </form>
 
 <!-- <p>Har du redan ett konto? <a href="./login.php"> Logga in här</a>.</p> -->

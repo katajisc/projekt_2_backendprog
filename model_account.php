@@ -1,7 +1,5 @@
 <?php
-
-    $username = $_SESSION['username']; # Hämta anv.namn från inloggad klient
-    print("Välkommen " . $_SESSION['username'] . "! <br>");
+    $username = $_SESSION['username'];
 
     $sql = "SELECT * FROM profiles WHERE username = ?"; # sql-kommandot
     $stmt = $conn->prepare($sql);   # sql konverteras till c

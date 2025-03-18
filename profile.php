@@ -22,9 +22,8 @@
                 <?php include "view_comments.php" ?>
             </article>
 
-            <!-- ???? -->
             <button>
-                <a href="logout.php">Logga ut</a>
+                <a href="model_logout.php">Logga ut</a>
             </button>
         </section>
 

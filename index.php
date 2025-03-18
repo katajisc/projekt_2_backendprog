@@ -13,9 +13,7 @@
     <div id="container">
         <?php include "header.php" ?>
         <section>
-
             <article>
-                <h2>Välkommen till Day2Date - Dags att dejta!</h2>
                 <?php if(!empty($_REQUEST['profile'])) {
                     include "./view_ad.php";    # se spec. profil
                 }
@@ -30,4 +28,5 @@
     </div>
 </body>
 
+<script src="./script.js"></script>
 </html>
